@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Basal Metabolic Rate (BMR) Calculator</title>
+    <link href="Assignment1Styles.css" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+        }
+        .auto-style2 {
+            background-color: #FF9966;
+        }
+        .auto-style4 {
+            background-color: #FF9966;
+        }
+        .auto-style5 {
+            height: 25px;
+            background-color: #FF9966;
+        }
+        #Submit1 {
+            height: 28px;
+        }
+        #Text1 {
+            width: 76px;
+        }
+        #Text2 {
+            width: 58px;
+        }
+        #Text4 {
+            width: 60px;
+        }
+        #Checkbox1 {
+            width: 21px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+      <header>
+         <h1 style="height: 218px; background-color: #FF9966;margin:0">
+            <img src="images/51UoIzk274L.PNG" alt="BMR" title="" style="height: 218px; width: 244px" />
+         </h1>
+      <article style="background-color: #FF9966">
+         <h2 style="background-color: #FF9966;margin:0">BMR Calculator</h2>
+         <p style="background-color: #FF9966">Basal metabolic rate (BMR) is the total number of calories that your body needs to perform basic, life-sustaining functions. These basal functions include circulation, breathing, cell production, nutrient processing, protein synthesis, and ion transport. You can calculate the basal metabolic rate using a mathematical formula.</p>
+         <p style="background-color: #FF9966">Fill in your real information</p>
+          <table class="auto-style1">
+              <tr>
+                  <td class="auto-style2">Gender</td>
+                  <td class="auto-style2">
+                      &nbsp;&nbsp;Male<input id="gender" type="radio" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Female<input id="gender1" type="radio" />&nbsp;&nbsp; </td>
+              </tr>
+              <tr>
+                  <td class="auto-style2">Age<input id="age" type="text" /></td>
+                  <td class="auto-style2">&nbsp;</td>
+              </tr>
+              <tr>
+                  <td colspan="2" class="auto-style2">Your Hight</td>
+              </tr>
+              <tr>
+                  <td class="auto-style4" colspan="2">
+                      <input id="hight" type="text" />cm</td>
+              </tr>
+              <tr>
+                  <td colspan="2" class="auto-style2">Your Weight</td>
+              </tr>
+              <tr>
+                  <td class="auto-style5" colspan="2">
+                      <input id="weight" type="text" />kg</td>
+              </tr>
+          </table>
+          Select your activity level:<br />
+          <input id="Checkbox3" type="checkbox" /> I am sedentary(little or no exercise)<br />
+          <input id="Checkbox4" type="checkbox" /> I am lightly active(light exercise or sports 1-3 days per week)<br />
+          <input id="Checkbox5" type="checkbox" /> I am moderately active(moderate exercise or sports 3-5 days per week)<br />
+          <input id="Checkbox6" type="checkbox" /> I am very active(hard exercise or sports 6-7 days per week)<br />
+          <input id="Checkbox7" type="checkbox" /> I am super active(very hard exercise or sports and aphysical job or 2x training<br />
+          <br />
+          <br />
+          <button onclick="calculate()">Calculate BMR</button>
+              <fieldset style="height: 36px">
+                  Your BMR<span id="BMR"></span>
+ : </fieldset>
+         </form>
+      </article>
+      </header>
+   </div>
+   <script src="ft.js"></script>
+</body>
+</html>
+<h6>&copy;&nbsp;Copyright Mengxi Li-COMP125-Summer 2020</h6>
+<script src="Assignment1.js"></script>
+</body>
+</html>
